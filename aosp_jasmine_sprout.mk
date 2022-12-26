@@ -9,9 +9,11 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Pixel Experience stuff
+# Inherit some common Pixel Extended stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_INCLUDE_STOCK_ARCORE := false
+PEX_BUILD_TYPE := OFFICIAL
+PEX_MAINTAINER := Immanuel_Raj
 
 # We are a phone
 IS_PHONE := true
